@@ -13,6 +13,50 @@
     color: var(--main-color);
 }
 
+header {
+   
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 22px;
+
+}
+
+nav {
+    
+}
+
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -27,6 +71,8 @@ body {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
+
 }
 
 .card {
