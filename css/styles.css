@@ -48,11 +48,6 @@ header {
     height: 100%;
 }
 
-.info-title {
-    padding: 0;
-  
-}
-
 nav {
     padding-left: 50px;
     padding-right: 50px;
@@ -90,6 +85,17 @@ h1 {
     font-weight: 700;
 }
 
+/**Start of Initial Info Section Styles**/
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    padding: 0; 
+}
+
+/**Search Form Styles**/
 .search {
     display: flex;
     justify-content: flex-start;
@@ -153,22 +159,45 @@ h1 {
     justify-content: center;
 }
 
-.info-snack {
-    display: flex;
+/**Filter list/buttons Styles **/
+.filter-container {
+   
+    
+}
+
+.filter-container ul {
+    list-style: none;
+}
+
+.filter-container a {
+    text-decoration: none;
 }
 
 .i-icon {
     border-radius: 50%;
-    
     width: 24px;
     height: 24px;
     color: var(--main-color);
     border: 1px solid var(--main-bg-color);
-} 
+}
 
+.info-snack {
+    display: flex;
+}
+
+
+/**Responsive adjustments for mobile devices/smaller screens**/
 @media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .main-container {
+        margin: 0;
+    }
+
     .header-main {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -191,7 +220,8 @@ h1 {
 body {
     display: flex;
     justify-content: center;
-    
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .main-container {
