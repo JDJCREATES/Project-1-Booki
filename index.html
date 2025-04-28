@@ -18,8 +18,11 @@
     <div class="main-container">
 
         <header>
-            <div class="main-header">
-                <img src="./images/logo/logo.png" alt="Logo of Booki" class="logo" />
+            <div class="header-main">
+                
+            <div className="logo-div">
+                <img src="./images/logo/Booki.png" alt="Logo of Booki" class="logo" />
+            </div>
                 <nav>
                     <ul>
                         <li><a href="/accommodation/">Accommodation</a></li>
@@ -27,21 +30,41 @@
                     </ul>
                 </nav>
             </div>
-            
-            <div class="header-title">
-                <h1>Find a place to stay for your dream vacation</h1>
-                <p>In the heart of the city or surrounded by nature</p>
-            </div>
-
-            <div class="header-search">
-                <form action="/search" method="get">
-                    <input type="text" name="search" placeholder="Marseille, France" />
-                    <button type="submit">Search</button>
-                </form>
-            </div>
         </header>
 
         <main>
+            <div class="info-section">
+                <section class="info-title">
+                    <h1>Find a place to stay for your dream vacation</h1>
+                    <p>In the heart of the city or surrounded by nature</p>
+                </section>
+
+                <section class="search">
+                    <form action="/search" method="get">
+                        <div class="loc-icon">
+                            <i class="fa-solid fa-location-dot location-icon"></i>
+                        </div>
+                        <input type="text" name="search" placeholder="Marseille, France" />
+                        <button type="submit">
+                            <span class="search-text">Search</span>
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </button>
+                    </form>
+                </section>
+
+                <section class="filter-container">
+                    <ul class="filter-list">
+                        <li><a href="#">Budget</a></li>
+                    </ul>
+                </section>
+
+                <section class="info-snack">
+                    <div class="i-icon">i</div>
+                    <p>There are over 500 available places to stay in this city</p>
+                </section>
+
+            </div>
+
             <div class="accommodation-and-popular">
                 <section class="accommodation">
                     <div class="accom-title">
@@ -55,6 +78,7 @@
                         <h2 class="section-title">Most popular</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
+
                     <div class="popular-cards">
                         <article class="card">
                             <img src="./images/accommodation/emile-guillemot.jpg" alt="Image of hotel room showing bed">
@@ -108,6 +132,7 @@
                             </div>
                         </article>
                     </div>
+
                 </section>
             </div>
         </main>
