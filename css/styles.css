@@ -5,7 +5,6 @@
     font-weight: 400;
     gap: 30px;
     max-width: 1440px;
-   
 }
 
 :root {
@@ -18,6 +17,25 @@ html {
     margin: auto;
     scroll-behavior: smooth;
 }
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 1024px;
+    margin: 0 auto;
+    gap: 35px;
+}
+
+p {
+    margin: 0;
+}
 
 .fa-solid, .fa-regular {
     color: var(--main-color);
@@ -25,9 +43,8 @@ html {
 
 /** Header and Nav Styles **/
 header {
-  margin-bottom: 30px;
-  height: 79px;
-  
+    margin-bottom: 30px;
+    height: 79px;
 }
 
 .logo {
@@ -46,7 +63,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     box-sizing: border-box;
     flex-wrap: wrap;
     width: 100%;
@@ -58,12 +74,10 @@ nav {
     padding-right: 50px;
     gap: 68px;
     height: 100%;
-
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
     margin: 0;
     height: 35px;
@@ -75,6 +89,8 @@ nav a {
     color: black;
     display: inline-block;
     height: 100%;
+    padding-top: 12px;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 
@@ -84,11 +100,6 @@ nav a:focus {
     border-top: 2px solid var(--main-color);
 }
 
-
-h1 {
-    font-size: 22px;
-    font-weight: 700;
-}
 
 /**Start of Initial Info Section Styles**/
 .info-section {
@@ -104,7 +115,7 @@ h1 {
 .search {
     display: flex;
     justify-content: flex-start;
-    width: 338px;
+    width: 377px;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 49px;
@@ -112,7 +123,6 @@ h1 {
     font-size: 18px;
     border: 1px solid var(--main-bg-color);
     border-radius: 15px;
-    
 }
 
 .search button {
@@ -148,7 +158,7 @@ h1 {
     display: none;
 }
 
-.search-text {
+.search-text, .filter-container p {
     display: block;
     font-weight: 700;
     font-size: 18px;
@@ -165,17 +175,36 @@ h1 {
 }
 
 /**Filter list/buttons Styles **/
-.filter-container {
-   
-    
+.filter-container, .info-snack, .info-snack div {
+    display: flex;
+    align-items: center;
 }
 
 .filter-container ul {
     list-style: none;
+    gap: 15px;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
+
 .filter-container a {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    color: black;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.filter-container a:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .i-icon {
@@ -184,17 +213,27 @@ h1 {
     height: 24px;
     color: var(--main-color);
     border: 1px solid var(--main-bg-color);
+    justify-content: center;
+    font-family: initial;
 }
 
 .info-snack {
     display: flex;
+    width: 100%;
+    height: 24px;
+    justify-content: flex-start;
+    gap: 10px;
 }
-
 
 /**Responsive adjustments for mobile devices/smaller screens**/
 @media screen and (max-width: 768px) {
     body {
         padding: 0;
+    }
+
+    .logo {
+        justify-content: center;
+        align-items: center;
     }
 
     .main-container {
@@ -221,17 +260,8 @@ h1 {
     }
 }
 
-
-body {
-    display: flex;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .main-container {
     width: 100%;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -276,6 +306,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-top: 35px;
 }
 
 /****** Accommodation ***********/
