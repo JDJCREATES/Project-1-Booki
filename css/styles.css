@@ -5,13 +5,18 @@
     font-weight: 400;
     gap: 30px;
     max-width: 1440px;
-    margin: 0;
+   
 }
 
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+}
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
 }
 
 .fa-solid, .fa-regular {
