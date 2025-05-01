@@ -89,7 +89,6 @@ header {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
-
 .nav-bar a:hover, 
 .nav-bar a:focus {
     color: var(--main-color);
@@ -158,6 +157,7 @@ header {
     display: block;
     font-weight: 700;
     font-size: 18px;
+    
 }
 
 .location-icon {
@@ -282,8 +282,15 @@ header {
     object-fit: cover;
 }
 
+.card-txt {
+    gap: 8px;
+    margin: 0;
+    
+}
+
 .card-title {
     font-size: 16px;
+    font-weight: 700;
 }
 
 .euro {
@@ -309,10 +316,11 @@ header {
 }
 
 /****** Accommodation ***********/
-.accom-cards { /**the container**/
+.accom-cards { /**container**/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
     height: 100%;
 }
 
@@ -327,11 +335,14 @@ header {
 
 .accommodation {
     width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 
 .accom-cards img {
+    width: 100%;
     max-height: 124px;
-    
+    object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border: 5px solid white;
@@ -380,4 +391,11 @@ header {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.card-link, .accom-card, .search-text {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
 }
