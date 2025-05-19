@@ -65,7 +65,7 @@ header {
 
 .nav-bar {
   padding-left: 50px;
-  padding-right: 50px;
+ 
   gap: 68px;
   height: 100%;
 }
@@ -109,13 +109,24 @@ header {
 .search {
   display: flex;
   justify-content: flex-start;
-  width: 377px;
+  width: 338px;
   margin-top: 10px;
   margin-bottom: 10px;
   height: 49px;
   font-weight: 700;
   font-size: 18px;
   border-radius: 15px;
+  border: 1px solid #F2F2F2;
+  margin-right: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.search form {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  gap: 0;
 }
 
 .search button {
@@ -125,10 +136,13 @@ header {
   border-bottom-right-radius: 15px;
   padding: 15px 16px 15px 16px;
   border: none;
+  margin: 0;
 }
 
 .search input {
   border: none;
+  flex: 1;
+  min-width: 0;
 }
 
 .search input::placeholder {
@@ -152,7 +166,7 @@ header {
 }
 
 .search-text,
-.filter-container p {
+.filter-container h2 {
   display: block;
   font-weight: 700;
   font-size: 18px;
@@ -339,7 +353,6 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
 /****** Popular ***********/
@@ -414,11 +427,14 @@ header {
   flex-direction: column;
   padding: 30px;
   gap: 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .to-do-cards {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .to-do-cards a {
@@ -426,6 +442,7 @@ header {
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
+  flex: 1;
 }
 
 .things-card {
@@ -435,7 +452,7 @@ header {
 
 .things-card img {
   height: 390px;
-  width: 297.5px;
+  max-width: 297.5px;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
@@ -544,13 +561,21 @@ header {
     max-width: 924px;
   }
 
-  .things-card {
-    max-height: 270px;
-    max-width: 193.55px;
+ .things-card {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
   }
+  
   .things-card img {
-    width: 193.55px;
+    width: 100%;
     height: 200px;
+    object-fit: cover;
+    max-width: none;
+  }
+
+  .to-do-cards a {
+    flex: 1;
   }
 
   .to-do-cards {
@@ -590,13 +615,14 @@ header {
 
   .nav-bar ul {
     width: 100%;
-    gap: 15px;
+    gap: 0px;
     padding: 0;
   }
 
   .nav-bar li {
     width: 50%;
     text-align: center;
+    display: flex;
   }
 
   .nav-bar a {
@@ -606,7 +632,8 @@ header {
     width: 100%;
     border-top: none;
     border-bottom: 2px solid var(--main-bg-color);
-    padding-bottom: 15px;
+    padding-bottom: 17px;
+    padding-top: 0;
   }
 
   .nav-bar a:hover,
@@ -632,12 +659,13 @@ header {
   }
 
   .accom-cards {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .accom-card {
     width: 100%;
     max-width: none;
+    flex: 0 0 100%;
   }
 
   .accommodation-and-popular {
@@ -677,13 +705,19 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
+  .filter-container a {
+    width: 100%;
+    white-space: nowrap;
+    justify-content: flex-start;
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
   .popular-cards .card {
     width: 100%;
     max-width: none;
-  }
-
-  .filter-list a {
-    width: 100%;
   }
 
   .search {
