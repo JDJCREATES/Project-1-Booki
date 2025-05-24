@@ -65,7 +65,7 @@ header {
 
 .nav-bar {
   padding-left: 50px;
- 
+
   gap: 68px;
   height: 100%;
 }
@@ -116,7 +116,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   border-radius: 15px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   margin-right: 0;
   box-sizing: border-box;
   overflow: hidden;
@@ -199,7 +199,7 @@ header {
 }
 
 .filter-container a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
@@ -271,7 +271,7 @@ header {
 }
 
 .card-txt {
-  gap: 8px;
+  gap: 0px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -433,6 +433,7 @@ header {
 
 .to-do-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 }
@@ -453,6 +454,7 @@ header {
 .things-card img {
   height: 390px;
   max-width: 297.5px;
+  width: 100%;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
@@ -523,6 +525,12 @@ header {
   .popular {
     width: auto;
     max-width: 924px;
+    gap: 20px;
+  }
+
+  .card-content {
+    padding: 0;
+    overflow: hidden;
   }
 
   .popular-cards {
@@ -561,12 +569,12 @@ header {
     max-width: 924px;
   }
 
- .things-card {
+  .things-card {
     width: 100%;
     max-width: 100%;
     height: 100%;
   }
-  
+
   .things-card img {
     width: 100%;
     height: 200px;
@@ -579,7 +587,9 @@ header {
   }
 
   .to-do-cards {
-    max-width: 924px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-around;
   }
 }
@@ -701,8 +711,8 @@ header {
   }
 
   .filter-container ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .filter-container a {
@@ -766,7 +776,7 @@ header {
     flex-direction: column;
     max-height: none;
   }
-  
+
   .foot-card {
     width: 100%;
   }
