@@ -633,6 +633,8 @@ header {
     width: 50%;
     text-align: center;
     display: flex;
+    margin: 0;
+    
   }
 
   .nav-bar a {
@@ -641,9 +643,11 @@ header {
     justify-content: center;
     width: 100%;
     border-top: none;
+    border-right: none;
+    border-left: none;
     border-bottom: 2px solid var(--main-bg-color);
     padding-bottom: 17px;
-    padding-top: 0;
+    padding: 0;
   }
 
   .nav-bar a:hover,
